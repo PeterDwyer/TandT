@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{0EC32946-F5B0-96C7-9634-A8EF942CBDA4}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_METRO;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_WINRT_PINVOKE;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_WINRT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_SERIALIZATION_BY_CODEGENERATION;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_0;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/MetroSupport/Tools/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\ActiveAfterYield.js" />
+     <Compile Include="Assets\Scripts\Avatar.js" />
+     <Compile Include="Assets\Scripts\Bag.js" />
+     <Compile Include="Assets\Scripts\BagSticker.js" />
+     <Compile Include="Assets\Scripts\CrossBar.js" />
+     <Compile Include="Assets\Scripts\Dancers.js" />
+     <Compile Include="Assets\Scripts\DestroySingleton.js" />
+     <Compile Include="Assets\Scripts\Difficulty.js" />
+     <Compile Include="Assets\Scripts\Element.js" />
+     <Compile Include="Assets\Scripts\FaceChange.js" />
+     <Compile Include="Assets\Scripts\FaceManager.js" />
+     <Compile Include="Assets\Scripts\Fader.js" />
+     <Compile Include="Assets\Scripts\FlurryLogs.js" />
+     <Compile Include="Assets\Scripts\Follow.js" />
+     <Compile Include="Assets\Scripts\GamesMenu.js" />
+     <Compile Include="Assets\Scripts\GirlOrBoy.js" />
+     <Compile Include="Assets\Scripts\InfoLinks.js" />
+     <Compile Include="Assets\Scripts\Initiate.js" />
+     <Compile Include="Assets\Scripts\IntroAnim.js" />
+     <Compile Include="Assets\Scripts\JigsawSelected.js" />
+     <Compile Include="Assets\Scripts\LunchLineSizes.js" />
+     <Compile Include="Assets\Scripts\MenuMatch.js" />
+     <Compile Include="Assets\Scripts\Movables.js" />
+     <Compile Include="Assets\Scripts\MyUnitySingleton.js" />
+     <Compile Include="Assets\Scripts\Pegs.js" />
+     <Compile Include="Assets\Scripts\PegsSpin.js" />
+     <Compile Include="Assets\Scripts\PopUpIcons.js" />
+     <Compile Include="Assets\Scripts\Puzzles.js" />
+     <Compile Include="Assets\Scripts\ScalesGame BackUp.js" />
+     <Compile Include="Assets\Scripts\ScalesGame.js" />
+     <Compile Include="Assets\Scripts\ScalesGame\ScalesDif.js" />
+     <Compile Include="Assets\Scripts\ScalesHandler.js" />
+     <Compile Include="Assets\Scripts\Schoolname.js" />
+     <Compile Include="Assets\Scripts\SelectSong.js" />
+     <Compile Include="Assets\Scripts\SetKidActive.js" />
+     <Compile Include="Assets\Scripts\SingAlong.js" />
+     <Compile Include="Assets\Scripts\SplashAnimation.js" />
+     <Compile Include="Assets\Scripts\Sticker.js" />
+     <Compile Include="Assets\Scripts\TextPos.js" />
+     <Compile Include="Assets\Scripts\ToSchoolAnimations.js" />
+     <Compile Include="Assets\Scripts\WaveAnimation.js" />
+     <Compile Include="Assets\Scripts\Waving.js" />
+     <Compile Include="Assets\Scripts\WordWrap.js" />
+     <None Include="Assets\Textures\1.0_intro\wave_tim.xml" />
+     <None Include="Assets\Textures\1.0_intro\wave_topsy.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

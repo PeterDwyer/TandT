@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{C37A7B6E-08D9-2D7B-DBE4-52B11346A511}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_METRO;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_WINRT_PINVOKE;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_WINRT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_SERIALIZATION_BY_CODEGENERATION;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_0;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/MetroSupport/Tools/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\OnScreenKeyboard\Scripts\OnScreenKeyboard.cs" />
+     <Compile Include="Assets\Scripts\CSharp\ActiveAfterYield.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Avatar.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Bag.cs" />
+     <Compile Include="Assets\Scripts\CSharp\BagSticker.cs" />
+     <Compile Include="Assets\Scripts\CSharp\CrossBar.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Dancers.cs" />
+     <Compile Include="Assets\Scripts\CSharp\DestroySingleton.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Difficulty.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Element.cs" />
+     <Compile Include="Assets\Scripts\CSharp\FaceChange.cs" />
+     <Compile Include="Assets\Scripts\CSharp\FaceManager.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Fader.cs" />
+     <Compile Include="Assets\Scripts\CSharp\FlurryLogs.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Follow.cs" />
+     <Compile Include="Assets\Scripts\CSharp\GamesMenu.cs" />
+     <Compile Include="Assets\Scripts\CSharp\GirlOrBoy.cs" />
+     <Compile Include="Assets\Scripts\CSharp\InfoLinks.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Initiate.cs" />
+     <Compile Include="Assets\Scripts\CSharp\IntroAnim.cs" />
+     <Compile Include="Assets\Scripts\CSharp\JigsawSelected.cs" />
+     <Compile Include="Assets\Scripts\CSharp\LunchLineSizes.cs" />
+     <Compile Include="Assets\Scripts\CSharp\MenuMatch.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Movables.cs" />
+     <Compile Include="Assets\Scripts\CSharp\MyUnitySingleton.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Pegs.cs" />
+     <Compile Include="Assets\Scripts\CSharp\PegsSpin.cs" />
+     <Compile Include="Assets\Scripts\CSharp\PopUpIcons.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Puzzles.cs" />
+     <Compile Include="Assets\Scripts\CSharp\ScalesDif.cs" />
+     <Compile Include="Assets\Scripts\CSharp\ScalesGame.cs" />
+     <Compile Include="Assets\Scripts\CSharp\ScalesHandler.cs" />
+     <Compile Include="Assets\Scripts\CSharp\SchoolName.cs" />
+     <Compile Include="Assets\Scripts\CSharp\SelectSong.cs" />
+     <Compile Include="Assets\Scripts\CSharp\SetKidActive.cs" />
+     <Compile Include="Assets\Scripts\CSharp\SingAlong.cs" />
+     <Compile Include="Assets\Scripts\CSharp\SplashAnimation.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Sticker.cs" />
+     <Compile Include="Assets\Scripts\CSharp\ToSchoolAnimations.cs" />
+     <Compile Include="Assets\Scripts\CSharp\WaveAnimation.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Waving.cs" />
+     <Compile Include="Assets\Scripts\CSharp\WordWrap.cs" />
+     <Compile Include="Assets\Scripts\TransparencySortOrder.cs" />
+     <Compile Include="Assets\Scripts\Windows8Handler.cs" />
+     <None Include="Assets\Textures\1.0_intro\wave_tim.xml" />
+     <None Include="Assets\Textures\1.0_intro\wave_topsy.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

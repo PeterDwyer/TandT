@@ -1,0 +1,18 @@
+<TextureAtlas imagePath = "Assets/gfx/experience1/1.0_intro/wave_tim.png">
+      <SubTexture name = "wave.tim00" x = "0" y = "0" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim01" x = "340" y = "0" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim02" x = "680" y = "0" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim03" x = "0" y = "146" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim04" x = "340" y = "146" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim05" x = "680" y = "146" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim06" x = "0" y = "292" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim07" x = "340" y = "292" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim08" x = "680" y = "292" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim09" x = "0" y = "438" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim10" x = "340" y = "438" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim11" x = "680" y = "438" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim12" x = "0" y = "584" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim13" x = "340" y = "584" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim14" x = "680" y = "584" width = "340" height = "146"/>
+      <SubTexture name = "wave.tim15" x = "0" y = "730" width = "340" height = "146"/>
+</TextureAtlas>

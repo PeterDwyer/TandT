@@ -1,0 +1,18 @@
+<TextureAtlas imagePath = "Assets/gfx/experience1/1.0_intro/wave_topsy.png">
+      <SubTexture name = "wave.topsy00" x = "0" y = "0" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy01" x = "340" y = "0" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy02" x = "680" y = "0" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy03" x = "0" y = "146" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy04" x = "340" y = "146" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy05" x = "680" y = "146" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy06" x = "0" y = "292" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy07" x = "340" y = "292" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy08" x = "680" y = "292" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy09" x = "0" y = "438" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy10" x = "340" y = "438" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy11" x = "680" y = "438" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy12" x = "0" y = "584" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy13" x = "340" y = "584" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy14" x = "680" y = "584" width = "340" height = "146"/>
+      <SubTexture name = "wave.topsy15" x = "0" y = "730" width = "340" height = "146"/>
+</TextureAtlas>

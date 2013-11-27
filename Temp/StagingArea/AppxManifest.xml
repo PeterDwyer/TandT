@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="TnT" Publisher="CN=DefaultCompany" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Properties>
+    <DisplayName>Start School</DisplayName>
+    <PublisherDisplayName>DefaultCompany</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="Template.exe" EntryPoint="TnT.App">
+      <VisualElements DisplayName="Start School" Logo="Assets\SquareTile.png" SmallLogo="Assets\SmallTile.png" Description="TnT" ForegroundText="light" BackgroundColor="#FF0000">
+        <DefaultTile ShortName="Start School" WideLogo="Assets\Wide310x150Logo.png" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#FF0E00" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities />
+</Package>

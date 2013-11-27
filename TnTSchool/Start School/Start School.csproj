@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Template</RootNamespace>
     <AssemblyName>Template</AssemblyName>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>en-gb</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>MetroTestCertificate.pfx</PackageCertificateKeyFile>
@@ -143,6 +143,15 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="P31MetroEssentials">
+      <HintPath>Plugins\Metro\P31MetroEssentials.dll</HintPath>
+    </Reference>
+    <Reference Include="P31MetroHelpers">
+      <HintPath>Plugins\Metro\P31MetroHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="P31RestKit">
+      <HintPath>Plugins\Metro\P31RestKit.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>.\UnityEngine.dll</HintPath>
     </Reference>

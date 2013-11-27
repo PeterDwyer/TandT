@@ -20,8 +20,8 @@ namespace Template
 
 		private void OnCommandRequested(SettingsPane settingsPane, SettingsPaneCommandsRequestedEventArgs eventArgs)
 		{
-			eventArgs.Request.ApplicationCommands.Add(new SettingsCommand("SettingsId", "Settings", OnSettingsCommand));
-			eventArgs.Request.ApplicationCommands.Add(new SettingsCommand("PrivacyPolicyId", "Privacy Policy", OpenPrivacyPolicy));
+			eventArgs.Request.ApplicationCommands.Add(new SettingsCommand("SettingsId", "About", OnSettingsCommand));
+			//eventArgs.Request.ApplicationCommands.Add(new SettingsCommand("PrivacyPolicyId", "Privacy Policy", OpenPrivacyPolicy));
 		}
 
 		private async void OpenPrivacyPolicy(IUICommand command)

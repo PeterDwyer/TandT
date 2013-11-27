@@ -68,6 +68,7 @@ namespace Template
 			}
 
 			Window.Current.Activate();
+			Prime31.MetroHelpers.UIHelper.initialize();
             Window.Current.SizeChanged += Current_SizeChanged;
 		}
 

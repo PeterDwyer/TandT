@@ -10,7 +10,7 @@
 
     <SwapChainBackgroundPanel x:Name="DXSwapChainPanel">
         <MediaElement x:Name="VideoPlayer" Source="Assets/3sec_wide.mp4" AutoPlay="True" MediaEnded="OnMediaEnded" />
-        <SwapChainBackgroundPanel.RowDefinitions>
+        <!--SwapChainBackgroundPanel.RowDefinitions>
             <RowDefinition Height="19*"/>
             <RowDefinition Height="237*"/>
         </SwapChainBackgroundPanel.RowDefinitions>
@@ -18,7 +18,6 @@
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="37*"/>
             <ColumnDefinition Width="1326*"/>
-            
-        </SwapChainBackgroundPanel.ColumnDefinitions>
+        </SwapChainBackgroundPanel.ColumnDefinitions-->
     </SwapChainBackgroundPanel>
 </Page>

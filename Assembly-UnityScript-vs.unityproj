@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{0EC32946-F5B0-96C7-9634-A8EF942CBDA4}</ProjectGuid>
+	<ProjectGuid>{885318D7-F7DB-D1E5-6788-6F13F25DAE80}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,51 +46,20 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ActiveAfterYield.js" />
-     <Compile Include="Assets\Scripts\Avatar.js" />
-     <Compile Include="Assets\Scripts\Bag.js" />
-     <Compile Include="Assets\Scripts\BagSticker.js" />
-     <Compile Include="Assets\Scripts\CrossBar.js" />
-     <Compile Include="Assets\Scripts\Dancers.js" />
-     <Compile Include="Assets\Scripts\DestroySingleton.js" />
-     <Compile Include="Assets\Scripts\Difficulty.js" />
-     <Compile Include="Assets\Scripts\Element.js" />
-     <Compile Include="Assets\Scripts\FaceChange.js" />
-     <Compile Include="Assets\Scripts\FaceManager.js" />
-     <Compile Include="Assets\Scripts\Fader.js" />
-     <Compile Include="Assets\Scripts\FlurryLogs.js" />
-     <Compile Include="Assets\Scripts\Follow.js" />
      <Compile Include="Assets\Scripts\GamesMenu.js" />
-     <Compile Include="Assets\Scripts\GirlOrBoy.js" />
-     <Compile Include="Assets\Scripts\InfoLinks.js" />
-     <Compile Include="Assets\Scripts\Initiate.js" />
-     <Compile Include="Assets\Scripts\IntroAnim.js" />
-     <Compile Include="Assets\Scripts\JigsawSelected.js" />
-     <Compile Include="Assets\Scripts\LunchLineSizes.js" />
-     <Compile Include="Assets\Scripts\MenuMatch.js" />
-     <Compile Include="Assets\Scripts\Movables.js" />
-     <Compile Include="Assets\Scripts\MyUnitySingleton.js" />
-     <Compile Include="Assets\Scripts\Pegs.js" />
-     <Compile Include="Assets\Scripts\PegsSpin.js" />
-     <Compile Include="Assets\Scripts\PopUpIcons.js" />
-     <Compile Include="Assets\Scripts\Puzzles.js" />
-     <Compile Include="Assets\Scripts\ScalesGame BackUp.js" />
-     <Compile Include="Assets\Scripts\ScalesGame.js" />
-     <Compile Include="Assets\Scripts\ScalesGame\ScalesDif.js" />
-     <Compile Include="Assets\Scripts\ScalesHandler.js" />
-     <Compile Include="Assets\Scripts\Schoolname.js" />
-     <Compile Include="Assets\Scripts\SelectSong.js" />
-     <Compile Include="Assets\Scripts\SetKidActive.js" />
-     <Compile Include="Assets\Scripts\SingAlong.js" />
-     <Compile Include="Assets\Scripts\SplashAnimation.js" />
-     <Compile Include="Assets\Scripts\Sticker.js" />
-     <Compile Include="Assets\Scripts\TextPos.js" />
-     <Compile Include="Assets\Scripts\ToSchoolAnimations.js" />
-     <Compile Include="Assets\Scripts\WaveAnimation.js" />
-     <Compile Include="Assets\Scripts\Waving.js" />
-     <Compile Include="Assets\Scripts\WordWrap.js" />
      <None Include="Assets\Textures\1.0_intro\wave_tim.xml" />
+     <None Include="Assets\Plugins\P31MetroEssentials.xml" />
      <None Include="Assets\Textures\1.0_intro\wave_topsy.xml" />
+ <Reference Include="P31MetroEssentials">
+ <HintPath>Assets\Plugins\P31MetroEssentials.dll</HintPath>
+ </Reference>
+ <Reference Include="P31RestKit">
+ <HintPath>Assets\Plugins\P31RestKit.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{64F5942C-D330-1A77-C7EF-BCA813ECF5EE}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

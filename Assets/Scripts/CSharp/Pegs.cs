@@ -457,7 +457,7 @@ public class Pegs : MonoBehaviour
 		//if(Input.touchCount > 0)
 		if(Input.GetButton("Fire1"))
 		{
-			Touch theTouch = Input.GetTouch(0);
+			//Touch theTouch = Input.GetTouch(0);
 			tt = true;
 		
 			if(setOld)

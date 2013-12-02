@@ -21,14 +21,15 @@ namespace Template
 		private void OnCommandRequested(SettingsPane settingsPane, SettingsPaneCommandsRequestedEventArgs eventArgs)
 		{
 			eventArgs.Request.ApplicationCommands.Add(new SettingsCommand("SettingsId", "About", OnSettingsCommand));
-			//eventArgs.Request.ApplicationCommands.Add(new SettingsCommand("PrivacyPolicyId", "Privacy Policy", OpenPrivacyPolicy));
+			eventArgs.Request.ApplicationCommands.Add(new SettingsCommand("PrivacyPolicyId", "Privacy Policy", OpenPrivacyPolicy));
 		}
 
 		private async void OpenPrivacyPolicy(IUICommand command)
 		{
-			Uri uri = new Uri("http://www.unity3d.com");
+            Uri uri = new Uri("http://www.penguin.co.uk/static/cs/uk/0/penguin_privacyterms/privacypolicy.html");
 			await Launcher.LaunchUriAsync(uri);
 		}
+
 		private void OnSettingsCommand(IUICommand command)
 		{
 			double width = 400;

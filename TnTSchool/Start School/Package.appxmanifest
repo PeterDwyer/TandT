@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="TnT" Publisher="CN=DefaultCompany" Version="1.0.2.30" ProcessorArchitecture="x86" />
+  <Identity Name="TnT" Publisher="CN=DefaultCompany" Version="1.0.2.42" ProcessorArchitecture="x86" />
   <Properties>
     <DisplayName>Start School</DisplayName>
     <PublisherDisplayName>Penguin Books Ltd</PublisherDisplayName>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="Template.exe" EntryPoint="TnT.App">
-      <VisualElements DisplayName="Start School" Logo="Assets\SquareTile.png" SmallLogo="Assets\SmallTile.png" Description="TnT" ForegroundText="light" BackgroundColor="#FF0000" ToastCapable="true">
+      <VisualElements DisplayName="Start School" Logo="Assets\SquareTile.png" SmallLogo="Assets\SmallTile.png" Description="Topsy and Tim start School" ForegroundText="light" BackgroundColor="#FF0000" ToastCapable="true">
         <DefaultTile ShortName="Start School" WideLogo="Assets\Wide310x150Logo.png" />
         <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#FF0E00" />
         <InitialRotationPreference>

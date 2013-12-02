@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Prime31.MetroEssentials;
+using Prime31;
 
 public class SelectSong : MonoBehaviour 
 {	
@@ -452,7 +454,8 @@ public class SelectSong : MonoBehaviour
 				// Take us to the info about charm.
 				Instantiate(Fader, Camera.main.transform.position, Camera.main.transform.rotation);
 				yield return new WaitForSeconds(0.5f);
-				Application.LoadLevel("StartScrInfo");
+				SettingsPane.show();
+				//Application.LoadLevel("StartScrInfo")
 			}
 			if(target == Text5)
 			{

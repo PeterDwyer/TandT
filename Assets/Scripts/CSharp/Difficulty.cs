@@ -87,6 +87,11 @@ public class Difficulty : MonoBehaviour
 	
 	void OnGUI()
 	{
+		if( !Windows8Handler.ShowGUI )
+		{
+			return;
+		}
+
 		GUI.skin = skin;
 		Vector3 tempPos;
 		

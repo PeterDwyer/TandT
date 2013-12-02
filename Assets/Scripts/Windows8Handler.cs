@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Windows8Handler : MonoBehaviour 
 {
+	public static bool ShowGUI = true;
+
 	private static GameObject pauseBanner;
 
 	public static void PauseGame(bool p)
@@ -20,6 +22,7 @@ public class Windows8Handler : MonoBehaviour
 					pos = pauseBanner.transform.position;
 					pos.x = camera.transform.position.x;
 					pos.y = camera.transform.position.y;
+					pos.z = camera.transform.position.z + 5;
 
 					pauseBanner.transform.position = pos;
 				}
@@ -29,12 +32,13 @@ public class Windows8Handler : MonoBehaviour
 					pos.x = camera.transform.position.x;
 					pos.y = camera.transform.position.y;
 					pos.z = camera.transform.position.z + 5;
-					
+
 					pauseBanner.transform.position = pos;
 
 					pauseBanner.SetActive( true );
 				}
 
+				ShowGUI = false;
 				Time.timeScale = 0.0f;
 				AudioListener.pause = true;
 			}
@@ -56,19 +60,16 @@ public class Windows8Handler : MonoBehaviour
 				pos = pauseBanner.transform.position;
 				pos.x = camera.transform.position.x;
 				pos.y = camera.transform.position.y;
-				
-				pauseBanner.transform.position = pos;
+				pos.z = camera.transform.position.z + 5;
 
-				pauseBanner.SetActive( false );
+				pauseBanner.transform.position = pos;
 			}
 
+			pauseBanner.SetActive( false );
+
+			ShowGUI = true;
 			Time.timeScale = 1.0f;
 			AudioListener.pause = false;
 		}
-	}
-
-	public static void ShowSettings( bool settings )
-	{
-
 	}
 }

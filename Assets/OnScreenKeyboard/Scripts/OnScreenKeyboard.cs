@@ -152,8 +152,8 @@ public class OnScreenKeyboard : MonoBehaviour {
 			Destroy(this);
 		}
 		
-		upperKeys = upperKeysNew;
-		lowerKeys = lowerKeysNew;
+		//upperKeys = upperKeysNew;
+		//lowerKeys = lowerKeysNew;
 		
         // Check for row markers and count row lengths
         List<int> rowMarkersTemp = new List<int>();
@@ -373,7 +373,11 @@ public class OnScreenKeyboard : MonoBehaviour {
 		if( keyText.Equals("Shift")) {
 			return "";
 		}
-		
+
+		if(keyText.Equals("Space")){
+			return " ";
+		}
+
 		return keyText;
 	}
 	

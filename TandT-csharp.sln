@@ -1,8 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{E466022C-30D5-D2BD-2DF4-E0B0AF633356}") = "TandT", "Assembly-CSharp-firstpass-vs.csproj", "{64F5942C-D330-1A77-C7EF-BCA813ECF5EE}"
-EndProject
 Project("{E466022C-30D5-D2BD-2DF4-E0B0AF633356}") = "TandT", "Assembly-CSharp-vs.csproj", "{0D5183A8-1C6E-9671-8F41-1F68BFCEADCC}"
 EndProject
 Global
@@ -11,10 +9,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{64F5942C-D330-1A77-C7EF-BCA813ECF5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64F5942C-D330-1A77-C7EF-BCA813ECF5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64F5942C-D330-1A77-C7EF-BCA813ECF5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64F5942C-D330-1A77-C7EF-BCA813ECF5EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0D5183A8-1C6E-9671-8F41-1F68BFCEADCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0D5183A8-1C6E-9671-8F41-1F68BFCEADCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D5183A8-1C6E-9671-8F41-1F68BFCEADCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,7 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																	GlobalSection(MonoDevelopProperties) = preSolution
+																															GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

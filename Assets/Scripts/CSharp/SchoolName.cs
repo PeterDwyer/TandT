@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using MyPlugin;
 
 public class SchoolName : MonoBehaviour 
 {	
@@ -25,6 +26,8 @@ public class SchoolName : MonoBehaviour
 	
 	void Start () 
 	{
+		MyPlugin.XamlTextBoxOverlay text = new MyPlugin.XamlTextBoxOverlay();
+		text.ShowTextBox( Screen.width/2f, Screen.height / 2, 40f, 30f, "ffffff", "000000", 12.0f, "Ariel", "000000" );
 	
 			Pos.x = Screen.width/2f;
 			Pos.y = Screen.height / 2f ;
@@ -35,6 +38,8 @@ public class SchoolName : MonoBehaviour
 			{
 				Text.guiText.text = PlayerPrefs.GetString("Name");
 			}
+
+
 	}
 	
 	void Update () 

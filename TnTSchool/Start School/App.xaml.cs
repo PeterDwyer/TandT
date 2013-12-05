@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -14,7 +15,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.ViewManagement;
 using UnityPlayer;
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -35,7 +35,26 @@ namespace Template
 		{
 			this.InitializeComponent();
 			appCallbacks = new AppCallbacks(false);
+            appCallbacks.Initialized += appCallbacks_Initialized;
+            //appCallbacks.Initialized += RemoveSplashScreen;
 		}
+
+        void appCallbacks_Initialized()
+        {
+            // wire up dispatcher for plugin
+            MyPlugin.Dispatcher.InvokeOnAppThread = InvokeOnAppThread;
+            MyPlugin.Dispatcher.InvokeOnUIThread = InvokeOnUIThread;
+        }
+
+        public void InvokeOnAppThread(Action callback)
+        {
+            appCallbacks.InvokeOnAppThread(() => callback(), false);
+        }
+
+        public void InvokeOnUIThread(Action callback)
+        {
+            appCallbacks.InvokeOnUIThread(() => callback(), false);
+        }
 
 		/// <summary>
 		/// Invoked when the application is launched normally by the end user.  Other entry points
@@ -45,13 +64,14 @@ namespace Template
 		/// <param name="args">Details about the launch request and process.</param>
 		protected override void OnLaunched(LaunchActivatedEventArgs args)
 		{
+            appCallbacks.SetAppArguments(args.Arguments);
 			Frame rootFrame = Window.Current.Content as Frame;
 
 			// Do not repeat app initialization when the Window already has content,
 			// just ensure that the window is active
-			if (rootFrame == null)
+			if (rootFrame == null && !appCallbacks.IsInitialized())
 			{
-				var mainPage = new MainPage();
+				var mainPage = new MainPage(args.SplashScreen);
 				Window.Current.Content = mainPage;
 				Window.Current.Activate();
 
@@ -59,7 +79,7 @@ namespace Template
 				_bridge = new WinRTBridge.WinRTBridge();
 				appCallbacks.SetBridge(_bridge);
 
-				appCallbacks.SetSwapChainBackgroundPanel(mainPage.GetSwapChainBackgroundPanel());
+                appCallbacks.SetSwapChainBackgroundPanel(mainPage.GetSwapChainBackgroundPanel());
 
 
 				appCallbacks.SetCoreWindowEvents(Window.Current.CoreWindow);
@@ -69,26 +89,17 @@ namespace Template
 
 			Window.Current.Activate();
 			Prime31.MetroHelpers.UIHelper.initialize();
-            Window.Current.SizeChanged += Current_SizeChanged;
 		}
 
-        void Current_SizeChanged(object sender, WindowSizeChangedEventArgs e)
+        private void RemoveSplashScreen()
         {
-            ApplicationViewState myViewState = ApplicationView.Value;
-            if (myViewState == ApplicationViewState.Snapped)
+            try
             {
-                AppCallbacks.Instance.InvokeOnAppThread(new AppCallbackItem(() =>
-                {
-                    Windows8Handler.PauseGame(true);
-                }), false);
+                MainPage page = (MainPage)Window.Current.Content;
+                page.RemoveSplashScreen();
             }
-            else
-            {
-                AppCallbacks.Instance.InvokeOnAppThread(new AppCallbackItem(() =>
-                {
-                    Windows8Handler.PauseGame(false);
-                }), false);
-            }
+            catch (InvalidCastException)
+            { }
         }
 	}
 }

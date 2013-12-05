@@ -8,16 +8,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <SwapChainBackgroundPanel x:Name="DXSwapChainPanel">
+    <SwapChainBackgroundPanel x:Name="DXSwapChainBackgroundPanel">
         <MediaElement x:Name="VideoPlayer" Source="Assets/3sec_wide.mp4" AutoPlay="True" MediaEnded="OnMediaEnded" />
-        <!--SwapChainBackgroundPanel.RowDefinitions>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="237*"/>
-        </SwapChainBackgroundPanel.RowDefinitions>
-        <SwapChainBackgroundPanel.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="37*"/>
-            <ColumnDefinition Width="1326*"/>
-        </SwapChainBackgroundPanel.ColumnDefinitions-->
+        <Grid x:Name="ExtendedSplashGrid">
+            <!--Image x:Name="ExtendedSplashImage" Source="Assets/SplashScreen.png"/-->
+        </Grid>
     </SwapChainBackgroundPanel>
 </Page>

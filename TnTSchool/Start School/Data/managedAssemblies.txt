@@ -1,6 +1,7 @@
-Assembly-CSharp-firstpass.dll
 Assembly-CSharp.dll
 Boo.Lang.dll
+Facebook.dll
+MyPlugin.dll
 P31MetroEssentials.dll
 P31MetroHelpers.dll
 P31RestKit.dll

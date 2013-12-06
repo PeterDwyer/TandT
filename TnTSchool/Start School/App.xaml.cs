@@ -71,7 +71,7 @@ namespace Template
 			// just ensure that the window is active
 			if (rootFrame == null && !appCallbacks.IsInitialized())
 			{
-				var mainPage = new MainPage(args.SplashScreen);
+				var mainPage = new MainPage( );
 				Window.Current.Content = mainPage;
 				Window.Current.Activate();
 
@@ -90,16 +90,5 @@ namespace Template
 			Window.Current.Activate();
 			Prime31.MetroHelpers.UIHelper.initialize();
 		}
-
-        private void RemoveSplashScreen()
-        {
-            try
-            {
-                MainPage page = (MainPage)Window.Current.Content;
-                page.RemoveSplashScreen();
-            }
-            catch (InvalidCastException)
-            { }
-        }
 	}
 }

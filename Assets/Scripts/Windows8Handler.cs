@@ -4,6 +4,7 @@ using System.Collections;
 public class Windows8Handler : MonoBehaviour 
 {
 	public static bool ShowGUI = true;
+	public static bool ShowSchoolName = true;
 
 	private static GameObject pauseBanner;
 

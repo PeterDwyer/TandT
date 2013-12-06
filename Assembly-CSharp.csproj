@@ -96,14 +96,14 @@
      <None Include="Assets\Plugins\P31MetroEssentials.xml" />
      <None Include="Assets\Textures\1.0_intro\wave_topsy.xml" />
      <None Include="Assets\NewShader.shader" />
+ <Reference Include="MyPlugin">
+ <HintPath>Assets\Plugins\MyPlugin.dll</HintPath>
+ </Reference>
  <Reference Include="P31MetroEssentials">
  <HintPath>Assets\Plugins\P31MetroEssentials.dll</HintPath>
  </Reference>
  <Reference Include="P31RestKit">
  <HintPath>Assets\Plugins\P31RestKit.dll</HintPath>
- </Reference>
- <Reference Include="MyPlugin">
- <HintPath>Assets\Plugins\MyPlugin.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
